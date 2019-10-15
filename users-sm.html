@@ -1,0 +1,19 @@
+﻿<a href="details.html?id={{user.id}}" class="user-link">
+    <div class="user-img-container">
+        <img src="{{user.image}}" alt="{{user.fname}} {{user.lname}}" />
+    </div>
+    <div class="user-info-container">
+        <div class="user-name">
+            {{user.fname}} {{user.lname}}
+        </div>
+        <div class="user-email">
+            {{user.email}}
+        </div>
+        <div class="user-address">
+            {{user.streetNum}} {{user.streetAdd}}
+        </div>
+        <div class="user-address">
+            {{user.city}}, {{user.state}} {{user.zip}}
+        </div>
+    </div>
+</a>

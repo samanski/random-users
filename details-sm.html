@@ -1,0 +1,47 @@
+﻿<div class="details-img-container">
+    <img src="{{user.picture.large}}" alt="{{user.name.first}} {{user.name.last}}" />
+</div>
+
+<div class="details-info-container">
+
+    <div class="details-name-container">
+        <div class="details-title">Name</div>
+        <div class="details-name">
+            {{user.name.title}}. {{user.name.first}} {{user.name.last}}
+        </div>
+    </div>
+
+    <div class="details-login-container">
+        <div class="details-title">Login</div>
+        <div class="details-login">
+            {{user.login.username}}
+        </div>
+    </div>
+
+    <div class="details-address-container">
+        <div class="details-title">Address</div>
+        <div class="details-address">
+            <div class="details-address1">
+                {{user.location.street.number}} {{user.location.street.name}}
+            </div>
+            <div class="details-address2">
+                {{user.location.city}}, {{user.location.state}} {{user.location.postcode}}
+            </div>
+        </div>
+    </div>
+
+    <div class="details-email-container">
+        <div class="details-title">Email</div>
+        <div class="details-email">
+            {{user.email}}
+        </div>
+    </div>
+
+    <div class="details-dob-container">
+        <div class="details-title">Date of Birth</div>
+        <div class="details-dob">
+            {{user.dob.date}}
+        </div>
+    </div>
+
+</div>

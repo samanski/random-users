@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="UserController">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>Users</title>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <div class="header">Persons</div>
+        <div class="content">
+            <div class="user-wrapper" ng-class="userInfo" ng-include="'users-sm.html'" ng-repeat="user in userResults"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.7/angular.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src='js/scripts.js'></script>
+</body>
+</html>

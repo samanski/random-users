@@ -1,0 +1,216 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.svg-defs {
+    position: absolute; 
+    width: 0; 
+    height: 0; 
+    overflow: hidden
+}
+
+.content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #4caf50;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: default;
+}
+
+.header a {
+    color: #fff;
+}
+
+.header a:hover, .header a:focus {
+    color: #ccc;
+}
+
+.icon {
+	display: inline-block;
+    position: relative;
+    top: 3px;
+	color: #444444;
+    width: 25px;
+	height: 25px;
+	fill: #fff;
+    margin: 0 5px 0 0;
+}
+
+a:hover .icon, a:focus .icon {
+    fill: #ccc;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #fafafa;
+}
+
+
+/* USERS */
+.user-wrapper {
+    width: 28%;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 2.5%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-link {
+    display: flex;
+    align-items: center;
+}
+
+.user-img-container {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user-img-container img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.user-info-container {
+    width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: .85em;
+    padding: 0 0 0 15px;
+}
+
+.user-name {
+    width: 100%;
+    color: #666;
+    font-weight: 700;
+}
+
+.user-email {
+    width: 100%;
+    color: #666;
+}
+
+.user-address {
+    display: inline;
+    color: #c5c2bc;
+    padding: 0 3px 0 0;
+}
+
+@media(max-width:1200px) {
+    .user-wrapper {
+        width: 45%;
+    }
+}
+
+@media(max-width:800px) {
+    .user-wrapper {
+        width: 100%;
+    }
+}
+
+
+/* USER DETAILS */
+.details-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+}
+
+.details-img-container {
+    width: 25%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: 1px solid #ccc;
+}
+
+.details-img-container img {
+    width: 150px;
+    height: 150px;
+    margin: 15px 0;
+}
+
+.details-info-container {
+    width: 74%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.details-name-container,
+.details-login-container,
+.details-address-container,
+.details-email-container,
+.details-dob-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.details-dob-container {
+    border-bottom: none;
+}
+
+.details-title {
+    width: 100%;
+    color: #c5c2bc;
+    font-size: .85em;
+    align-self: flex-start;
+}
+
+.details-name,
+.details-login, 
+.details-address, 
+.details-email, 
+.details-dob {
+    width: 100%;
+    color: #666;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+@media(max-width:992px) {
+    .details-img-container {
+        width: 30%;
+    }
+
+    .details-info-container {
+        width: 69%;
+    }
+}
+
+@media(max-width:768px) {
+    .details-wrapper {
+        margin: 0;
+    }
+
+    .details-img-container {
+        width: 100%;
+        border-right: none;
+    }
+
+    .details-info-container {
+        width: 100%;
+    }
+}
